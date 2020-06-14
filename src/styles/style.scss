@@ -18,9 +18,30 @@ html, body {
  **/
 
  .card-lastNews {
-    background: url(../files/img/toy-story-4.jpg) no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
 
+    &.toy-story {
+        background-image: url(../files/img/toy-story-4.jpg);
+        background-size: cover;
+    }
+    &.bigflo {
+        background-image: url(../files/img/bigflo.jpg);
+        background-size: auto 100%;
+        background-position: right;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 66px;
+            background-color: #6bcbd7;
+            z-index: 10;
+            transform: skew(13deg, 9deg);
+            left: calc(50% - 31px);
+            top: -5px;
+            height: 110%;
+        }
+    }
+   
     .card {
         &-header {
             font-size: rem(12);
@@ -38,6 +59,11 @@ html, body {
         &-text {
             height: 40px;
             margin-top: 30px;
+        }
+        &-skew {
+            width: 50%;
+            height: 100%;
+            background: $blue;
         }
         &-footer {
             height: 45px;
@@ -91,6 +117,9 @@ html, body {
             font-weight: $bold;
         }
     }
+    &__desc {
+        font-size: rem(9);
+    }
  }
 
 /* GENERIC CLASS */
@@ -106,6 +135,10 @@ html, body {
     border-color: $dark-blue!important;
 }
 
+.bg-lightBlue {
+    background-color: $blue!important;
+}
+
  .text-red {
     color: $red!important;
  }
@@ -116,4 +149,8 @@ html, body {
 
 .z-index-10 {
     z-index: 10;
+}
+
+.skew-15 {
+    transform: skew(-15deg, -15deg);  
 }
