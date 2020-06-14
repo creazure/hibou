@@ -46,7 +46,9 @@ var routes = {
     files: {
         html: 'dist/',
         images: baseDirs.src+'images/*',
-        imgmin: baseDirs.assets+'files/img/',
+        imgmin: baseDirs.assets+'files/fonts/',
+        fonts: baseDirs.src+'fonts/*',
+        fontsmin: baseDirs.assets+'files/fonts/',
         cssFiles: baseDirs.assets+'css/*.css',
         htmlFiles: baseDirs.dist+'*.html',
         styleCss: baseDirs.assets+'css/style.css'
@@ -130,6 +132,13 @@ gulp.task('images', function() {
         .pipe(gulp.dest(routes.files.imgmin));
 });
 
+/* Fonts */
+
+gulp.task('fonts', function() {
+    gulp.src(routes.files.fonts)
+        .pipe(gulp.dest(routes.files.fontsmin));
+});
+
 /* Preproduction beautifiying task (SCSS, JS) */
 
 gulp.task('beautify', function() {
@@ -208,11 +217,11 @@ gulp.task('critical', function () {
         }));
 });
 
-gulp.task('dev', ['templates', 'styles', 'scripts',  'images', 'serve']);
+gulp.task('dev', ['templates', 'styles', 'scripts',  'images', 'fonts', 'serve']);
 
-gulp.task('build', ['templates', 'styles', 'scripts', 'images']);
+gulp.task('build', ['templates', 'styles', 'scripts', 'images', 'fonts']);
 
-gulp.task('optimize', ['uncss', 'critical', 'images']);
+gulp.task('optimize', ['uncss', 'critical', 'images', 'fonts']);
 
 gulp.task('deploy', ['optimize',  ]);
 

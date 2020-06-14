@@ -1,11 +1,14 @@
-@mixin bp-mobile {
-  @media (max-width: #{$max-width}) {
-    @content;
-  }
-}
+/* MEXIN to convert PX to REM for font-size */
+$baseFontSize : 16;
 
-@mixin mobile-aspect {
-    @media screen and (device-aspect-ratio: 40/71) {
-        @content;
-    }
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
 }

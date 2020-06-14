@@ -1,0 +1,14 @@
+@include media-breakpoint-down(sm) { 
+    .card-footer {
+        display: none !important;
+    }
+
+    .card-lastNews {
+        &__discount {
+            display: none !important;
+        }
+        &__picture {
+            background-size: 100%;
+        }
+    }
+}

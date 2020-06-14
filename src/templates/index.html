@@ -13,67 +13,40 @@
 </head>
 
 <body>
-    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-            <symbol id="icon-heart" viewBox="0 0 768 1024">
-                <title>heart</title>
-                <path class="path1" d="M384 864c399-314 384-425 384-512s-72-192-192-192-192 128-192 128-72-128-192-128-192 105-192 192-15 198 384 512z"></path>
-            </symbol>
-        </defs>
-    </svg>
-    <header>
-        <h1>lehibou Anis</h1>
-        <h2>Test technique LEHIBOU</h2>
-        <div class="buttons"> <a class="btn" href="https://github.com/carloscuesta/generator-starterkit/" target="_blank">GitHub</a> <a class="btn" href="https://github.com/carloscuesta/starterkit/archive/master.zip" target="_blank">Download</svg></a> <a class="btn" href="https://github.com/carloscuesta/generator-starterkit" target="_blank">Star</use></svg></a> </div>
-    </header>
-    <main>
-        <section class="getting-started">
-            <div class="wrap">
-                <blockquote>
-                    <h2><b>Hey! I've created a project for you. This is what you've got</b></h2>
-                </blockquote>
-                <br>
-                <h2 class="section-title">Technologies</h2>
-                <ul>
-                    <li><span class="tech">Gulp.js</span></li> 
-                    <li><span class="tech">Sass</span></li>  
-                    <li><span class="tech">HTML</span></li>   
-                    <li><span class="tech">Bootstrap</span></li> 
-                </ul>
-                <h3 class="section-title">Happy Coding!</h3>
-            </div>
-        </section>
-        <section class="getting-started">
-            <div class="wrap">
-                <h2 class="section-title">Getting Started</h2>
-                <p>The <b>starterkit</b> allows you to create and build awesome sites without worrying about anything else. To get started, just run the default gulp task.
+    <!-- .container -->
+    <div class="container-xl">
+        <div class="card-deck">
+            <!-- Card Toy Story -->
+            <div class="card card-lastNews rounded-0 p-3 text-white position-relative">
+              <img class="card-img-top card-lastNews__picture position-absolute" src="./files/img/toy-story-cd.png" alt="Toy story 4">
+              <div class="card-header bg-transparent p-0 rounded-0 border-bottom-0 d-flex flex-column z-index-10"><span><u>Nouveauté</u></span> à partir du 25 décembre</div>
+              <div class="card-body mt-3 p-0 z-index-10">
+                <h2 class="card-title m-0">Toy Story 4 Toy<br>Story 4</h2>
+                <p class="card-text position-relative d-flex align-items-end">
+                    <span class="card-lastNews__startFrom position-absolute">à partir de</span>
+                    <span class="card-lastNews__newPrice p-2 bg-white text-darkblue">15<small>.90€</small></span>
+                    <span class="card-lastNews__oldPrice p-1"><s>16<small>.90€</small></s></span>
                 </p>
-                <div class="code-block-small"><code>$ <span class="gulp-default">gulp</span></code></div>
-                <p><b>Don't forget to <a href="https://github.com/carloscuesta/generator-starterkit/">star the generator-starterkit</a> project on GitHub!</b></p>
-            </div>
-        </section>
-        <section class="gulp-workflow">
-            <div class="wrap">
-                <h2 class="section-title">Exploring Starterkit Features</h2>
-                <p>Starterkit comes with a lot of tasks that can be runned with:
-                    <div class="code-block-small"><code>$ gulp <span class="highlight-code">taskname</span></code></div>
-                </p>
-                <p>Let's take a look at them. There are <b>4 main tasks</b> that groups a bunch of other subtasks. You can run directly a group of tasks using the main one, or just a specific one by their name.
-                    <ul>
-                        <li><span class="gulp-task">gulp</span> : Default dev task, watch and serves your code, compiling on change and injecting them into the browser.</li>
-                        <li><span class="gulp-task">build</span> : Compiles styles and templates, transpiles scripts, optimizes images and beautifies prepro files.</li>
-                        <li><span class="gulp-task">optimize</span> : Clean unused CSS, extract critical path, compress images.</li>
-                        <li><span class="gulp-task">deploy</span> : Upload your /dist folder into your server.</li>
-                    </ul>
-                </p>
-                <p>To see with more detail the subtasks runned, please take a look at the <a href="https://github.com/carloscuesta/starterkit/#tasks" target="_blank">starterkit documentation on GitHub</a>.</p>
-                <a href="https://github.com/carloscuesta/starterkit/#tasks" class="btn btn-background btn-download" target="_blank">Documentation</a>
+              </div>
+              <div class="card-lastNews__discount position-absolute bg-white d-flex flex-column align-items-center p-2 text-red">jusqu'à<span>-50%</span></pan></div>
+              <div class="card-footer bg-transparent p-0 mt-3 rounded-0 border-top-0 d-flex">
+                <button type="button" class="btn btn-info bg-darkBlue border-darkblue text-white mr-2">J'en profite</button>
+                <button type="button" class="btn btn-light bg-transparent text-white mr-2">Voir toutes les nouveautés</button>
+                <button type="button" class="btn btn-link text-white p-1 align-self-end">Condition*</button>
+              </div>
+            </div><!-- End Card Toy Story -->
 
-            </div>
-        </section>
-    </main>
-    <footer>
-        <h2>Made with <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg> by <a href="https://github.com/carloscuesta/generator-starterkit" target="_blank">generator-starterkit</a></h2> </footer>
+            <!-- Card Bigflo & Oli -->
+            <div class="card bg-info text-primary">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div><!-- End Card Bigflo & Oli -->
+          </div>
+    </div> <!-- End container -->
 </body>
 
 </html>
