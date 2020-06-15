@@ -9,17 +9,25 @@
 - [**Sass**](http://sass-lang.com)  
 
 ## Install and Use
+```bash
+git clone https://github.com/creazure/hibou.git
+```
 
 ### Install
 
 ```bash
-npm install -g lehibou
+npm install
 ```
 
 ### Use 
-
+*Watach*
 ```bash
-yo lehibou
+npm run dev
+```
+
+*Build*
+```bash
+npm run dev
 ```
 
 # Author 
