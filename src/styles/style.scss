@@ -122,6 +122,23 @@ html, body {
     }
  }
 
+ /* Not to miss block */
+ .notToMiss {
+     &-content {
+         span {
+             font-size: rem(10);
+             font-weight: $semiBold;
+         }
+         h2 {
+            font-size: rem(32);
+            font-weight: $bold;
+         }
+     }
+     &-tag {
+         font-size: rem(12);
+     }
+ }
+
 /* GENERIC CLASS */
  .bg-darkBlue {
      background-color: $dark-blue!important;
@@ -133,6 +150,9 @@ html, body {
 
  .border-darkblue {
     border-color: $dark-blue!important;
+}
+.border-lightgray {
+    border: 1px solid lightgray !important;
 }
 
 .bg-lightBlue {
